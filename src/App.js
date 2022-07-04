@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './favicno.ico'
 export default function App() {
   // here i can put all the questions in one separated file
 
