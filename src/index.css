@@ -63,6 +63,9 @@ body {
   flex-direction: column;
   justify-content: space-between; }
 
+.celebrate-img {
+  width: 20%; }
+
 @media screen and (max-width: 768px) {
   .app {
     width: 100%; } }

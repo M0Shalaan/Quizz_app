@@ -51,7 +51,7 @@ body {
 }
 
 .question-text {
-font-size: 1.5rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 
 }
@@ -62,6 +62,10 @@ font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.celebrate-img {
+  width: 20%;
 }
 
 @import 'mobile';

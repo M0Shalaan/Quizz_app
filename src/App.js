@@ -1,8 +1,18 @@
 import React, { useState } from "react";
+import Img from "./img/celebration.svg";
 export default function App() {
   // here i can put all the questions in one separated file
 
   const questions = [
+    {
+      questionText: "How many pyramids in giza?",
+      answerOptions: [
+        { answerText: "1", isCorrect: false },
+        { answerText: "5", isCorrect: false },
+        { answerText: "6", isCorrect: false },
+        { answerText: "3", isCorrect: true },
+      ],
+    },
     {
       questionText: "What is the capital of France?",
       answerOptions: [
@@ -53,7 +63,6 @@ export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
-
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
@@ -65,11 +74,21 @@ export default function App() {
       setShowScore(true);
     }
   };
+
   return (
     <div className="app">
       {showScore ? (
         <div className="score-section">
-          You scored {score} out of {questions.length}
+          <div>
+            <h1>
+              Congratulations{" "}
+              <img className="celebrate-img" src={Img} alt="pic" />
+            </h1>
+          </div>
+
+          <p>
+            You scored {score} out of {questions.length}
+          </p>
         </div>
       ) : (
         <>
