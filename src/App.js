@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Img from "./img/celebration.svg";
+import "./index.scss";
 export default function App() {
   // here i can put all the questions in one separated file
 

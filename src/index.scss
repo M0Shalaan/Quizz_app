@@ -1,5 +1,5 @@
-@import 'config';
-@import 'button';
+@import './scss/config';
+@import './scss/button';
 
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,6 +17,7 @@ body {
 }
 
 .app {
+
 
   background-color: $border-color;
   width: 450px;
@@ -68,4 +69,4 @@ body {
   width: 20%;
 }
 
-@import 'mobile';
+@import './scss/mobile';
